@@ -1,0 +1,9 @@
+include ':maps'
+include ':details'
+include ':views'
+include ':main'
+include ':commons'
+include ':remote'
+include ':domain'
+include ':app'
+rootProject.name = "Eventos"

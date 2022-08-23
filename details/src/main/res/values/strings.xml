@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Details</string>
+    <string name="checkin">CheckIn</string>
+    <string name="about">Sobre</string>
+    <string name="connection_error">Um erro ocorreu ao baixar a lista de eventos!</string>
+    <string name="event_error">Evento indisponível!</string>
+</resources>

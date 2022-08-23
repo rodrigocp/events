@@ -1,0 +1,18 @@
+import br.com.rcp.buildsrc.*
+
+apply plugin: 'com.android.library'
+apply from: '../android-build.gradle'
+apply plugin: 'kotlin-android'
+
+dependencies {
+    implementation Dependencies.Libraries.constraintLayout
+    implementation Dependencies.Libraries.koinViewModel
+    implementation Dependencies.Libraries.lifecycleLiveData
+    implementation Dependencies.Libraries.playServicesMap
+    implementation Dependencies.Libraries.playServicesLocation
+
+//    implementation project(Modules.domain)
+//    implementation project(Modules.remote)
+//    implementation project(Modules.commons)
+//    implementation project(Modules.views)
+}

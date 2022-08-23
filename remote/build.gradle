@@ -1,0 +1,19 @@
+import br.com.rcp.buildsrc.*
+
+apply plugin: 'com.android.library'
+apply from: '../android-build.gradle'
+
+dependencies {
+    implementation project(Modules.domain)
+
+    implementation Dependencies.Libraries.koin
+    implementation Dependencies.Libraries.retrofit
+    implementation Dependencies.Libraries.gsonConverter
+
+    testImplementation Dependencies.Tests.mockk
+    testImplementation Dependencies.Tests.kotlinCoroutineTests
+}
+
+configurations.all() {
+    resolutionStrategy.force Dependencies.Libraries.okhttp
+}

@@ -1,0 +1,11 @@
+import br.com.rcp.buildsrc.*
+
+apply plugin: 'com.android.library'
+apply from: '../android-build.gradle'
+
+dependencies {
+    implementation Dependencies.Libraries.navigationKTX
+    implementation Dependencies.Libraries.navigationFragmentKTX
+    implementation Dependencies.Libraries.constraintLayout
+    implementation Dependencies.Libraries.picasso
+}

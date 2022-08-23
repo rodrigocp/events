@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Views</string>
+    <string name="hour">Horário</string>
+    <string name="local">Local</string>
+    <string name="checkin">Checkin</string>
+    <string name="name">Nome</string>
+    <string name="email">E-Mail</string>
+</resources>

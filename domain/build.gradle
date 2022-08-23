@@ -1,0 +1,13 @@
+import br.com.rcp.buildsrc.*
+
+apply plugin: 'com.android.library'
+apply from: '../android-build.gradle'
+
+dependencies {
+    implementation Dependencies.Libraries.koin
+    implementation Dependencies.Libraries.retrofit
+    implementation Dependencies.Libraries.sharedPreference
+
+    testImplementation Dependencies.Tests.mockk
+    testImplementation Dependencies.Tests.kotlinCoroutineTests
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="br.com.rcp.home.fragments.EventListFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/toDetail"
+            app:destination="@id/detail"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail"
+        android:name="br.com.rcp.details.fragments.DetailFragment"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/toMaps"
+            app:destination="@id/maps"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/maps"
+        android:name="br.com.rcp.maps.fragments.MapFragment"
+        tools:layout="@layout/fragment_map" >
+        <argument
+            android:name="latlong"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+</navigation>

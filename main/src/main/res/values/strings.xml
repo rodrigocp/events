@@ -1,0 +1,4 @@
+<resources>
+    <string name="empty_events_list">Nenhum evento disponível no momento!</string>
+    <string name="connection_error">Um erro ocorreu ao baixar a lista de eventos!</string>
+</resources>

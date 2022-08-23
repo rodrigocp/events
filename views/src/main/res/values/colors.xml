@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#001970</color>
+    <color name="text">#212121</color>
+    <color name="background">#f5f5f5</color>
+    <color name="event">#bbdefb</color>
+</resources>

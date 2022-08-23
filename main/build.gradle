@@ -1,0 +1,21 @@
+import br.com.rcp.buildsrc.*
+
+apply plugin: 'com.android.library'
+apply from: '../android-build.gradle'
+apply plugin: 'kotlin-android'
+
+dependencies {
+    implementation Dependencies.Libraries.navigationKTX
+    implementation Dependencies.Libraries.navigationFragmentKTX
+    implementation Dependencies.Libraries.constraintLayout
+    implementation Dependencies.Libraries.picasso
+    implementation Dependencies.Libraries.retrofit
+    implementation Dependencies.Libraries.koinViewModel
+    implementation Dependencies.Libraries.swipeRefresh
+    implementation Dependencies.Libraries.lifecycleLiveData
+
+    implementation project(Modules.domain)
+    implementation project(Modules.remote)
+    implementation project(Modules.commons)
+    implementation project(Modules.views)
+}
